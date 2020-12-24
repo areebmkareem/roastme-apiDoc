@@ -41,14 +41,75 @@
         ]
       }
     },
+    "description": "<p>This api is in beta state you have to enter the full keyword for proper search result.</p>",
     "version": "0.0.0",
     "filename": "src/routers/v1/contacts.js",
     "groupTitle": "Contacts"
   },
   {
     "type": "POST",
+    "url": "/transaction",
+    "title": "Create A New Transaction",
+    "group": "Transactions",
+    "name": "CreateNewTransaction",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "amount",
+            "description": "<p>Mandatory Amount.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "transactionType",
+            "description": "<p>Mandatory &quot;lend or borrow&quot;.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "receiverId",
+            "description": "<p>Mandatory Receiver user id.</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "src/routers/v1/transaction.js",
+    "groupTitle": "Transactions"
+  },
+  {
+    "type": "GET",
+    "url": "/transaction",
+    "title": "Get User Transactions",
+    "group": "Transactions",
+    "name": "GetUserTransactions",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "token",
+            "description": "<p>Mandatory users unique token.</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "src/routers/v1/transaction.js",
+    "groupTitle": "Transactions"
+  },
+  {
+    "type": "POST",
     "url": "/register",
-    "title": "Register New User",
+    "title": "Create New User",
     "group": "Users",
     "name": "CreateUser",
     "parameter": {
