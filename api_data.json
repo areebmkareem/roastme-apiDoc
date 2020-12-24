@@ -1,25 +1,5 @@
 [
   {
-    "type": "DELETE",
-    "url": "/user/:id",
-    "title": "Hello World",
-    "version": "0.0.0",
-    "filename": "src/mynewfile1.js",
-    "group": "/Users/ark/Documents/Work/roastme-api/src/mynewfile1.js",
-    "groupTitle": "/Users/ark/Documents/Work/roastme-api/src/mynewfile1.js",
-    "name": "DeleteUserId"
-  },
-  {
-    "type": "${payload.method",
-    "url": "}",
-    "title": "${payload.path} ${payload.title}",
-    "version": "0.0.0",
-    "filename": "src/playground.js",
-    "group": "/Users/ark/Documents/Work/roastme-api/src/playground.js",
-    "groupTitle": "/Users/ark/Documents/Work/roastme-api/src/playground.js",
-    "name": "${payload.method"
-  },
-  {
     "type": "POST",
     "url": "/register",
     "title": "Register New User",
