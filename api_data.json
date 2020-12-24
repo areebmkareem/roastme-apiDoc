@@ -3,9 +3,8 @@
     "type": "POST",
     "url": "/register",
     "title": "Register New User",
-    "version": "0.0.1",
-    "name": "CreateUser",
     "group": "Users",
+    "name": "CreateUser",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -40,6 +39,119 @@
         ]
       }
     },
+    "version": "0.0.0",
+    "filename": "src/routers/v1/user.js",
+    "groupTitle": "Users"
+  },
+  {
+    "type": "GET",
+    "url": "/user",
+    "title": "Get User Details",
+    "group": "Users",
+    "name": "GetUserDetails",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "token",
+            "description": "<p>Mandatory users unique token.</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "src/routers/v1/user.js",
+    "groupTitle": "Users"
+  },
+  {
+    "type": "GET",
+    "url": "/logout",
+    "title": "Logout User",
+    "group": "Users",
+    "name": "LogoutUser",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "token",
+            "description": "<p>Mandatory users unique token.</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "src/routers/v1/user.js",
+    "groupTitle": "Users"
+  },
+  {
+    "type": "POST",
+    "url": "/login",
+    "title": "Login User With Email and Password",
+    "group": "Users",
+    "name": "SignInWithEmailAndPassword",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "email",
+            "description": "<p>Mandatory Email.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "password",
+            "description": "<p>Mandatory Password.</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "src/routers/v1/user.js",
+    "groupTitle": "Users"
+  },
+  {
+    "type": "POST",
+    "url": "/verify-otp",
+    "title": "Verify Email With OTP",
+    "group": "Users",
+    "name": "VerifyEmailByOTP",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "otp",
+            "description": "<p>Mandatory OTP.</p>"
+          }
+        ]
+      }
+    },
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "token",
+            "description": "<p>Mandatory users unique token.</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
     "filename": "src/routers/v1/user.js",
     "groupTitle": "Users"
   }
