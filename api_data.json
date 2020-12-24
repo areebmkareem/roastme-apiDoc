@@ -25,7 +25,7 @@
   {
     "type": "GET",
     "url": "/contacts/:userName",
-    "title": "Search User By userName",
+    "title": "Search User By User Name",
     "group": "Contacts",
     "name": "SearchUserByUserName",
     "header": {
