@@ -23,6 +23,29 @@ define({ "api": [
     "groupTitle": "Contacts"
   },
   {
+    "type": "GET",
+    "url": "/contacts/:userName",
+    "title": "Search User By userName",
+    "group": "Contacts",
+    "name": "SearchUserByUserName",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "token",
+            "description": "<p>Mandatory users unique token.</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "src/routers/v1/contacts.js",
+    "groupTitle": "Contacts"
+  },
+  {
     "type": "POST",
     "url": "/register",
     "title": "Register New User",
