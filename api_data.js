@@ -1,6 +1,65 @@
 define({ "api": [
   {
     "type": "GET",
+    "url": "/contact-requests",
+    "title": "Get User Contact Requests",
+    "group": "Contacts",
+    "name": "GetContactRequests",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "token",
+            "description": "<p>Mandatory users unique token.</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "src/routers/v1/contacts.js",
+    "groupTitle": "Contacts"
+  },
+  {
+    "type": "POST",
+    "url": "/contact-approve/:id",
+    "title": "Get User Contact Approve",
+    "group": "Contacts",
+    "name": "GetContactapprove",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Boolean",
+            "optional": false,
+            "field": "approved",
+            "description": "<p>Mandatory Approved.</p>"
+          }
+        ]
+      }
+    },
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "token",
+            "description": "<p>Mandatory users unique token.</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "src/routers/v1/contacts.js",
+    "groupTitle": "Contacts"
+  },
+  {
+    "type": "GET",
     "url": "/contacts",
     "title": "Get User Contacts",
     "group": "Contacts",
