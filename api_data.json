@@ -144,7 +144,7 @@
   },
   {
     "type": "GET",
-    "url": "/transaction",
+    "url": "/transactions/:id",
     "title": "Get User Transactions",
     "group": "Transactions",
     "name": "GetUserTransactions",
@@ -157,6 +157,13 @@
             "optional": false,
             "field": "token",
             "description": "<p>Mandatory users unique token.</p>"
+          },
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Mandatory Transaction contact Id.</p>"
           }
         ]
       }
